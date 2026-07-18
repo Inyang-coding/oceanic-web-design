@@ -32,13 +32,21 @@
 </section>
 
 <!-- Moved Newsletter block directly to the homepage content stream -->
+
+        
 <section id="newsletter">
     <div class="container">
         <h3>Subscribe to our Newsletter</h3>
-        <form>
-            <input type="email" placeholder="Enter Email..." required>
-            <button type="submit">Subscribe</button>
-        </form>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="058aac7a-7462-4d72-bbe3-113ac3398219">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit Form</button>
+</form>
+
+        
     </div>
 </section>
 

@@ -38,14 +38,26 @@
     <div class="container">
         <h3>Subscribe to our Newsletter</h3>
 
-        <form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="058aac7a-7462-4d72-bbe3-113ac3398219">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Submit Form</button>
-</form>
 
+
+        <!-- Form updated with the Web3Forms API action and POST method -->
+<form action="https://api.web3forms.com/submit" method="POST">
+    
+    <!-- 1. Paste your Access Key below -->
+    <input type="hidden" name="access_key" value="058aac7a-7462-4d72-bbe3-113ac3398219">
+    
+    <!-- 2. Customize how the notification appears in your email inbox -->
+    <input type="hidden" name="from_name" value="Oceanic Web Design">
+    <input type="hidden" name="subject" value="New Newsletter Subscription!">
+    
+    <!-- 3. Honeypot Anti-Spam protection field (invisible to real human users) -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- 4. Actual interactive input field -->
+    <input type="email" name="subscriber_email" placeholder="Enter Email..." required>
+    
+    <button type="submit">Subscribe</button>
+</form>
         
     </div>
 </section>
